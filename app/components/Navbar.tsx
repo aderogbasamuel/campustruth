@@ -11,7 +11,7 @@ export default function Navbar(){
                 </div>
                 <div className="gap-3 hidden sm:flex">
                     {["Home","Feature", "Benefits", "Faqs"].map((navlink,index)=>(
-                        <a href={`#${navlink}`}>{navlink}</a>
+                        <a href={`#${navlink}`} key={index}>{navlink}</a>
                     ))}
                 </div>
             </div>
