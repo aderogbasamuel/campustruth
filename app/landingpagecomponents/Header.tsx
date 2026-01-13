@@ -19,7 +19,7 @@ export default function Header() {
                             placeholder="Enter your email"
                             className=" ps-4 py-2 bg-transparent outline-none w-full"
                         />
-                        <button className="bg-[#28443F] w-full text-white text-sm px-4 py-2 rounded-full w-fit flex-shrink-0 text-nowrap">
+                        <button className="bg-[#28443F] w-fit text-white text-sm px-4 py-2 rounded-full flex-shrink-0 text-nowrap">
                             Join Waitlist
                         </button>
                     </form>
