@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className="flex flex-col items-center justify-center p-6 w-full">
             <Navbar />
-            <section className="items-start justify-center py-12 text-left max-w-5xl grid sm:grid-cols-2">
+            <section className="items-center justify-center py-12 text-left max-w-5xl grid sm:grid-cols-2">
                 <div className="flex flex-col py-0 sm:py-12 sm:px-0">
                     <h1 className="text-4xl font-bold mb-4 max-w-4xl">
                         Your student identity, finally in one place.
