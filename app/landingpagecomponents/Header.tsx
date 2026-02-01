@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Navbar from "../components/Navbar"
+import { ProfilePreviewSection } from "./ProfilePreview"
 export default function Header() {
     return (
         <div className="flex flex-col items-center justify-center p-6 w-full">
@@ -29,7 +30,8 @@ export default function Header() {
                     <p className="pt-4 text-black">1,200+ students joined in the first week.</p>
                 </div>
                 <div className="relative w-full h-full mt-10 sm:mt-0">
-                    <Image src={"/hero.svg"} width={500} height={600} priority alt="hero image" className="w-full object-cover h-fit" />
+                    {/* <Image src={"/hero.svg"} width={500} height={600} priority alt="hero image" className="w-full object-cover h-fit" /> */}
+                    <ProfilePreviewSection/>
                 </div>
             </section>
         </div>
