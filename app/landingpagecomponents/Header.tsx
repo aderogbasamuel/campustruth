@@ -7,10 +7,13 @@ export default function Header() {
             <section className="items-start justify-center py-12 text-left max-w-5xl grid sm:grid-cols-2">
                 <div className="flex flex-col py-0 sm:py-12 sm:px-0">
                     <h1 className="text-4xl font-bold mb-4 max-w-4xl">
-                        Campus information shouldn’t be scattered everywhere.
+                        Your student identity, finally in one place.
+
                     </h1>
                     <p className="text-sm sm:text-lg mb-8">
-                        CampusTruth brings all student updates official school news, deadline alerts, events, and real-time notices into one clean, smart dashboard. No more jumping between WhatsApp groups, Instagram pages, or random screenshots.
+                        CampusID helps students showcase their skills, projects, and campus life with a clean public profile.
+                        No noise. No pressure. Just proof of who you are and what you can do.
+
                     </p>
 
                     <form className="flex gap-2 border border-[#28443F] rounded-full p-1 w-full max-w-[400px]">
@@ -19,7 +22,7 @@ export default function Header() {
                             placeholder="Enter your email"
                             className=" ps-4 py-2 bg-transparent outline-none w-full"
                         />
-                        <button className="bg-[#28443F] w-fit text-white text-sm px-4 py-2 rounded-full flex-shrink-0 text-nowrap">
+                        <button className="bg-[#28443F] w-fit    text-white text-sm px-4 py-2 rounded-full flex-shrink-0 text-nowrap">
                             Join Waitlist
                         </button>
                     </form>
