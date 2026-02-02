@@ -6,6 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --background-color: hsl(220, 10%, 100%);
+   --foreground-color: hsl(240, 05%, 05%);
+
+   --gradient-color-1: hsl(210, 85%, 50%);
+   --gradient-color-2: hsl(165, 85%, 50%);
+   --gradient-color-3: hsl(270, 85%, 50%);
+   --gradient-color-4: hsl(350, 85%, 50%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,4 +37,100 @@ body {
 
 h1, h2 {
   /*worl*/
+}
+@keyframes pulseGradient {
+   0% {
+      opacity: 0.5;
+      transform: scale(0.9);
+   }
+   100% {
+      opacity: 0.8;
+      transform: scale(1.2);
+   }
+}
+.blob {
+   position: absolute;
+   border-radius: 50%;
+
+   &-gradient-1 {
+      top: 10%;
+      left: 15%;
+      width: 20rem;
+      height: 20rem;
+      background-color: var(--gradient-color-1);
+      animation: pulseGradient 16s infinite alternate ease-in-out;
+   }
+
+   &-gradient-2 {
+      right: 20%;
+      bottom: 15%;
+      width: 25rem;
+      height: 25rem;
+      background-color: var(--gradient-color-2);
+      animation-delay: -5s;
+      animation: pulseGradient 20s infinite alternate ease-in-out;
+   }
+
+   &-gradient-3 {
+      top: 20%;
+      right: 10%;
+      width: 20rem;
+      height: 20rem;
+      background-color: var(--gradient-color-3);
+      animation-delay: -8s;
+      animation: pulseGradient 18s infinite alternate ease-in-out;
+   }
+
+   &-gradient-4 {
+      left: 10%;
+      bottom: 25%;
+      width: 15rem;
+      height: 15rem;
+      background-color: var(--gradient-color-4);
+      animation-delay: -2s;
+      animation: pulseGradient 14s infinite alternate ease-in-out;
+   }
+}
+
+.banner {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   min-height: 100dvh;
+   overflow: hidden;
+   text-align: center;
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      pointer-events: none;
+      background: var(--background-color);
+   }
+
+   &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      filter: blur(10rem);
+   }
+
+   &-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+      z-index: 5;
+   }
 }

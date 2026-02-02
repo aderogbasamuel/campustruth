@@ -3,11 +3,17 @@ import Navbar from "../components/Navbar"
 import { ProfilePreviewSection } from "./ProfilePreview"
 export default function Header() {
     return (
-        <div className="flex flex-col items-center justify-center p-6 w-full">
+        <div className="flex flex-col items-center justify-center p-6 w-full hero-section section banner">
+             <div className="banner-overlay">
+         <span className="blob blob-gradient-1"></span>
+         <span className="blob blob-gradient-2"></span>
+         <span className="blob blob-gradient-3"></span>
+         <span className="blob blob-gradient-4"></span>
+      </div>
             <Navbar />
-            <section className="items-center justify-center py-12 text-left max-w-5xl grid sm:grid-cols-2">
+            <section className="items-center justify-center py-12 text-left max-w-5xl grid sm:grid-cols-2 banner-content">
                 <div className="flex flex-col py-0 sm:py-12 sm:px-0">
-                    <h1 className="text-4xl font-bold mb-4 max-w-4xl">
+                    <h1 className="text-4xl sm:text-6xl font-bold mb-4 max-w-4xl">
                         Your student identity, finally in one place.
 
                     </h1>

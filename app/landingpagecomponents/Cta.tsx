@@ -1,7 +1,7 @@
 export function WaitlistSection() {
     return (
-      <section className="w-full py-24 px-6 bg-[#F7FAF9]">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="w-full py-24 px-6 bg-[#]">
+        <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
             Claim your CampusID early.
           </h2>
