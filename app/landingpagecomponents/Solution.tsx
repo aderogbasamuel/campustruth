@@ -27,7 +27,7 @@ export function SolutionSection() {
                 "A link you can share anywhere",
 
             ].map((solution,index)=>(
-                <li className="border-[1.5px] border-[#28443F] flex gap-5 px-6 py-6 rounded-2xl bg-[#8CFF00]/30 text-lg">
+                <li className="border-[1.5px] border-[#28443F] flex gap-5 px-6 py-6 rounded-2xl bg-[#8CFF00]/30 text-lg" key={index}>
                 <p className="font-medium">0{index+1}</p>
                 <p>{solution}</p>
             </li>
